@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class Register extends StatelessWidget {
+class ShowCaseFailed02 extends StatelessWidget {
+  const ShowCaseFailed02({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.amber,
-    );
+    return const Placeholder();
   }
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import '../widget/RouterPage.dart';
 import '../style/font/Font.dart';
 import '../style/color/StylesColors.dart';
@@ -10,7 +9,6 @@ class HomeShowCase extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar:
           AppbarPage("ShowCase Template", TextStyleFontAppbar, Colors.black),
@@ -28,6 +26,7 @@ class HomeShowCase extends StatelessWidget {
                   Width: width,
                 ),
                 // * Login Page
+
                 // * Bottom Page
                 RouterPage(
                   TextStyle: TextStyleButton,
@@ -37,6 +36,16 @@ class HomeShowCase extends StatelessWidget {
                   Width: width,
                 ),
                 // * Bottom Page
+
+                // * Pin
+                RouterPage(
+                  TextStyle: TextStyleButton,
+                  Colors: StylesColors.white,
+                  Title: "Screen Pin UI",
+                  Page: "bottom",
+                  Width: width,
+                ),
+                // * Pin
               ],
             ),
           ),
