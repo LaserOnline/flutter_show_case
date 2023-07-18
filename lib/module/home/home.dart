@@ -46,6 +46,46 @@ class HomeShowCase extends StatelessWidget {
                   Width: width,
                 ),
                 // * Pin
+
+                // * Appbar
+                RouterPage(
+                  TextStyle: TextStyleButton,
+                  Colors: StylesColors.white,
+                  Title: "Appbar UI",
+                  Page: "appbar",
+                  Width: width,
+                ),
+                // * Appbar
+
+                // * Chip
+                RouterPage(
+                  TextStyle: TextStyleButton,
+                  Colors: StylesColors.white,
+                  Title: "Chip UI",
+                  Page: "chip",
+                  Width: width,
+                ),
+                // * Chip
+
+                // * Slidable
+                RouterPage(
+                  TextStyle: TextStyleButton,
+                  Colors: StylesColors.white,
+                  Title: "Slidable",
+                  Page: "slidable",
+                  Width: width,
+                ),
+                // * Slidable
+
+                //  * Rive
+                RouterPage(
+                  TextStyle: TextStyleButton,
+                  Colors: StylesColors.white,
+                  Title: "Rive",
+                  Page: "rive",
+                  Width: width,
+                ),
+                //  * Rive
               ],
             ),
           ),
