@@ -1,16 +1,30 @@
 import 'package:get/get.dart';
 import '../home/home.dart';
 
+// * Demo
+import '../../demo/demo_page.dart';
+// * Demo
+
+// * Nike
+import '../../demo/nike/nike_splash_screen.dart';
+import '../../demo/nike/view/home_nike.dart';
+// * Nike
+
+// * Tesla
+import '../../demo/tesla/tesla_splash_screen.dart';
+// * Tesla
+
 // * Login
 import '../../template/login/login.dart';
 import '../../template/login/components/show_case_login_01/ui/show_case_login_01.dart';
 import '../../template/login/components/show_case_login_02/ui/show_case_login_02.dart';
 import '../../template/login/components/show_case_login_03/ui/show_case_login_03.dart';
+import '../../template/login/components/show_case_login_04/ui/show_case_login_04.dart';
+import '../../template/login/components/show_case_login_05/ui/show_case_login_05.dart';
 // * Login
 
 // * Bottom
 import '../../template/bottom/bottom.dart';
-
 // * Bottom
 
 // * ScreenFailed
@@ -40,14 +54,44 @@ import '../../template/slidable/components/show_case_slidable_01/show_case_slida
 import '../../template/rive/rive.dart';
 import '../../template/rive/components/show_case_rive_01/show_case_rive_01.dart';
 import '../../template/rive/components/show_case_rive_02/show_case_rive_02.dart';
-
 // * Rive
+
 class AppRoutes {
   static final routes = [
     GetPage(
       name: '/home',
       page: () => HomeShowCase(),
     ),
+
+    // * ShowDemo
+    GetPage(
+      name: '/demo',
+      page: () => const DemoPageHome(),
+    ),
+    // * ShowDemo
+
+    // * Demo Nike
+
+    GetPage(
+      name: '/splash_nike',
+      page: () => const Splash_Screen_Nike(),
+      popGesture: false,
+    ),
+
+    GetPage(
+      name: '/nike',
+      page: () => const HomeNike(),
+    ),
+
+    // * Demo Nike
+
+    // * Demo Tesla
+    GetPage(
+      name: '/splash_tesla',
+      page: () => const Splash_Screen_Tesla(),
+      popGesture: false,
+    ),
+    // * Demo Tesla
 
     // * Login
     GetPage(
@@ -65,6 +109,14 @@ class AppRoutes {
     GetPage(
       name: '/login03',
       page: () => ShowCaseLogin03(),
+    ),
+    GetPage(
+      name: '/login04',
+      page: () => const ShowCaseLogin04(),
+    ),
+    GetPage(
+      name: '/login05',
+      page: () => const ShowCaseLogin05(),
     ),
     // * Login
 

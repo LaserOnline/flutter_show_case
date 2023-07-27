@@ -11,11 +11,11 @@ class ScreensBar extends StatefulWidget {
 
 class _MyWidgetState extends State<ScreensBar> {
   final urlImages = [
-    "https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-thumb.jpg",
-    "https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_181624-9331.jpg?w=2000",
-    "https://cdnb.artstation.com/p/assets/video_clips/images/024/538/805/large/pixel-jeff-thumb.jpg?1582740711",
+    "https://wallpapers.com/images/hd/anime-city-pictures-8myeyo440aletx78.jpg",
+    "https://cdn1.epicgames.com/ue/product/Screenshot/1-1920x1080-22b8ccc1509b2f1a713c44aeb02e8dbe.jpg?resize=1&w=1920",
+    "https://cdn1.epicgames.com/ue/product/Screenshot/8-1920x1080-8a0dc0ff34ec72091345f27541a77b44.jpg?resize=1&w=1920",
     "https://i.pinimg.com/originals/58/2d/96/582d96a1df2d94bb439af1594639ccfe.jpg",
-    "https://marmotamaps.com/de/fx/wallpaper/download/faszinationen/Marmotamaps_Wallpaper_Berchtesgaden_Desktop_1920x1080.jpg",
+    "https://img.freepik.com/premium-photo/idyllic-getaways-dreamy-destinations-your-vacation_767466-12191.jpg?w=2000",
     "https://i.pinimg.com/originals/8b/38/89/8b388987a365d4fd55dbf6adeae81ca7.jpg",
   ];
   int activeIndex = 0;

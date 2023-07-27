@@ -17,6 +17,16 @@ class HomeShowCase extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
+                // * Demo
+                RouterPage(
+                  TextStyle: TextStyleButton,
+                  Colors: StylesColors.white,
+                  Title: "App Demo",
+                  Page: "demo",
+                  Width: width,
+                ),
+                // * Demo
+
                 // * Login Page
                 RouterPage(
                   TextStyle: TextStyleButton,
