@@ -52,7 +52,7 @@ class HomeShowCase extends StatelessWidget {
                   TextStyle: TextStyleButton,
                   Colors: StylesColors.white,
                   Title: "Screen Pin UI",
-                  Page: "bottom",
+                  Page: "pin",
                   Width: width,
                 ),
                 // * Pin

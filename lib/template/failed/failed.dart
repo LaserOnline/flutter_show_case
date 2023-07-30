@@ -5,6 +5,7 @@ import '../../module/style/font/Font.dart';
 import '../../module/widget/AppBar.dart';
 
 class ScreenFailed extends StatelessWidget {
+  const ScreenFailed({super.key});
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;

@@ -56,6 +56,11 @@ import '../../template/rive/components/show_case_rive_01/show_case_rive_01.dart'
 import '../../template/rive/components/show_case_rive_02/show_case_rive_02.dart';
 // * Rive
 
+// * Pin
+import '../../template/pin/pin.dart';
+import '../../template/pin/components/show_case_pin_01/show_case_pin_01.dart';
+// * Pin
+
 class AppRoutes {
   static final routes = [
     GetPage(
@@ -193,5 +198,16 @@ class AppRoutes {
       page: () => ShowCaseRive02(),
     ),
     // * Rive
+
+    // * Pin
+    GetPage(
+      name: '/pin',
+      page: () => Pin(),
+    ),
+    GetPage(
+      name: '/pin1',
+      page: () => ShowCasePin01(),
+    ),
+    // * Pin
   ];
 }
