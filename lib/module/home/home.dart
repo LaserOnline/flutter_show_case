@@ -96,6 +96,16 @@ class HomeShowCase extends StatelessWidget {
                   Width: width,
                 ),
                 //  * Rive
+
+                // * OTP
+                RouterPage(
+                  TextStyle: TextStyleButton,
+                  Colors: StylesColors.white,
+                  Title: "OTP UI",
+                  Page: "otp",
+                  Width: width,
+                ),
+                // * OTP
               ],
             ),
           ),

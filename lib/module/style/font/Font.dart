@@ -4,6 +4,7 @@ import "../color/StylesColors.dart";
 const String fcParagraph = 'FCParagraph';
 const String autoSquare = 'AutoSquare';
 const String gravidaz = 'Gravidaz';
+const String giantboom = 'GiantBoomFont';
 
 const TextStyle TextStyleFontAppbar = TextStyle(
   fontFamily: gravidaz,

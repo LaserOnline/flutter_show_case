@@ -61,6 +61,12 @@ import '../../template/pin/pin.dart';
 import '../../template/pin/components/show_case_pin_01/show_case_pin_01.dart';
 // * Pin
 
+// * OTP
+import '../../template/otp/otp.dart';
+import '../../template/otp/components/show_case_otp_1/view/show_case_otp1.dart';
+import '../../template/otp/components/show_case_otp_2/view/show_case_otp_2.dart';
+// * OTP
+
 class AppRoutes {
   static final routes = [
     GetPage(
@@ -209,5 +215,20 @@ class AppRoutes {
       page: () => ShowCasePin01(),
     ),
     // * Pin
+
+    // * OTP
+    GetPage(
+      name: '/otp',
+      page: () => const OTP(),
+    ),
+    GetPage(
+      name: '/otp1',
+      page: () => ShowCaseOTP1(),
+    ),
+    GetPage(
+      name: '/otp2',
+      page: () => ShowCaseOTP2(),
+    ),
+    // * OTP
   ];
 }

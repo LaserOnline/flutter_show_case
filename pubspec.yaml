@@ -94,15 +94,25 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
 fonts:
-    - family: FCParagraph
-      fonts:
-        - asset: assets/font/FCParagraph.ttf
-    - family: AutoSquare
-      fonts:
-        - asset: assets/font/AutoSquare.otf
-    - family: Gravidaz
-      fonts:
-        - asset: assets/font/Gravidaz.otf
+  - family: FCParagraph
+    fonts:
+      - asset: assets/font/FCParagraph.ttf
+  - family: AutoSquare
+    fonts:
+      - asset: assets/font/AutoSquare.otf
+  - family: Gravidaz
+    fonts:
+      - asset: assets/font/Gravidaz.otf
+  - family: GiantBoomFont
+    fonts:
+      - asset: assets/font/GiantBoomFont.otf
+  - family: FCParagraph
+    fonts:
+      - asset: assets/font/FCParagraph.ttf
+  - family: BeastHead
+    fonts:
+      - asset: assets/font/Beast_Head_PERSONAL_USE_ONLY
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
