@@ -46,3 +46,10 @@ void ControllerClear() async {
   pin4.clear();
   Get.back();
 }
+
+void Clear() {
+  pin1.clear();
+  pin2.clear();
+  pin3.clear();
+  pin4.clear();
+}

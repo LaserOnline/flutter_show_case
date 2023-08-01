@@ -266,4 +266,10 @@ class _MyWidgetState extends State<ShowCaseOTP1> {
       backgroundColor: Colors.grey[300],
     );
   }
+
+  @override
+  void dispose() {
+    Clear();
+    super.dispose();
+  }
 }

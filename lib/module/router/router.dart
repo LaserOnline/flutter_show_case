@@ -25,6 +25,10 @@ import '../../template/login/components/show_case_login_05/ui/show_case_login_05
 
 // * Bottom
 import '../../template/bottom/bottom.dart';
+import '../../template/bottom/components/show_case_bottom_1/view/show_case_bottom_1.dart';
+import '../../template/bottom/components/show_case_bottom_2/view/show_case_bottom_2.dart';
+import '../../template/bottom/components/show_case_bottom_3/view/show_case_bottom_3.dart';
+import '../../template/bottom/components/show_case_bottom_4/view/show_case_bottom_4.dart';
 // * Bottom
 
 // * ScreenFailed
@@ -37,7 +41,6 @@ import '../../template/failed/components/show_case_failed_03/show_case_failed_03
 // * Appbar
 import '../../template/appbar/appbar_page.dart';
 import '../../template/appbar/show_case_appbar_01/show_case_appbar_01.dart';
-
 // * Appbar
 
 // * Chip
@@ -135,6 +138,22 @@ class AppRoutes {
     GetPage(
       name: '/bottom',
       page: () => BottomPage(),
+    ),
+    GetPage(
+      name: '/bottom1',
+      page: () => ShowCaseBottom1(),
+    ),
+    GetPage(
+      name: '/bottom2',
+      page: () => ShowCaseBottom2(),
+    ),
+    GetPage(
+      name: '/bottom3',
+      page: () => ShowCaseBottom3(),
+    ),
+    GetPage(
+      name: '/bottom4',
+      page: () => ShowCaseBottom4(),
     ),
     // * Bottom
 
