@@ -101,7 +101,7 @@ class AppRoutes {
 
     GetPage(
       name: '/nike',
-      page: () => const HomeNike(),
+      page: () => HomeNike(),
     ),
 
     // * Demo Nike

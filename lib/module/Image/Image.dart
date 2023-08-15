@@ -6,4 +6,5 @@ class IconImage {
   static const String batman = "assets/image/Batman_Emoji.png";
   static const String swords = "assets/image/swords.png";
   static const String password = "assets/image/password.png";
+  static const String user = "assets/image/user.png";
 }

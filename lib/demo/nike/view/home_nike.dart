@@ -1,55 +1,85 @@
 import 'package:flutter/material.dart';
-import '../widget/intro.dart';
-import '../widget/search.dart';
+import 'package:flutter_show_case/demo/nike/module/controller/prodouct.controller.dart';
+import 'package:get/get.dart';
+import 'package:get/state_manager.dart';
+import '../widget/Loading.dart';
+import '../widget/draggable_scrollable.dart';
+import '../widget/list.product.dart';
+import '../widget/profile.dart';
+import '../widget/promo.dart';
 
 class HomeNike extends StatelessWidget {
-  const HomeNike({super.key});
+  HomeNike({super.key});
+
+  final productController = Get.put(ProdouctController());
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
+
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        leading: Icon(
-          Icons.menu,
-          color: Colors.grey[900],
-        ),
-        centerTitle: true,
-        title: const Text(
-          "Nike",
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          IntroPage(),
-          const SizedBox(
-            height: 25,
-          ),
-          Search(),
-          const SizedBox(
-            height: 25,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 250),
-            child: Text(
-              "Prodouct",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.grey[800],
-                fontSize: 22,
-              ),
+      body: SafeArea(
+        child: Stack(
+          alignment: Alignment.bottomCenter,
+          children: [
+            CustomScrollView(
+              slivers: [
+                SliverAppBar(
+                  backgroundColor: Color.fromARGB(255, 248, 248, 248),
+                  centerTitle: true,
+                  leading: Container(),
+                  title: const Text(
+                    "Nike",
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  actions: const [
+                    MyProfile(),
+                  ],
+                  flexibleSpace: FlexibleSpaceBar(
+                    background: Promo(),
+                  ),
+                  expandedHeight: 230,
+                ),
+                SliverToBoxAdapter(
+                  child: Obx(() {
+                    if (productController.prodoucts.isEmpty)
+                      // ignore: curly_braces_in_flow_control_structures
+                      return const Padding(
+                        padding: EdgeInsets.only(top: 100),
+                        child: Loading(),
+                      );
+                    return SingleChildScrollView(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ListProduct(
+                            axis: true,
+                          ),
+                          ListProduct(
+                            axis: false,
+                          ),
+                        ],
+                      ),
+                    );
+                  }),
+                ),
+              ],
             ),
-          ),
-        ],
+            const FractionallySizedBox(
+              alignment: Alignment.bottomCenter,
+              heightFactor:
+                  0.8, // Adjust this factor to change the height of the sheet
+              child: DraggableScrollable(),
+            ),
+          ],
+        ),
       ),
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.grey[400],
     );
   }
 }
