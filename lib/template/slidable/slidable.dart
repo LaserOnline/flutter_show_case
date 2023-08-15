@@ -29,7 +29,7 @@ class Slidable extends StatelessWidget {
           ),
         ),
       ),
-      backgroundColor: Colors.purple[100],
+      backgroundColor: const Color.fromARGB(255, 0, 0, 0),
     );
   }
 }

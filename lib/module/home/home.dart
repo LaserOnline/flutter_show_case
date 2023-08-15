@@ -111,7 +111,7 @@ class HomeShowCase extends StatelessWidget {
           ),
         ),
       ),
-      backgroundColor: Colors.purple[100],
+      backgroundColor: Color.fromARGB(255, 0, 0, 0),
     );
   }
 }

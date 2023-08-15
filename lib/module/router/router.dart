@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import '../home/home.dart';
-
+import '../splash_screen/splash.dart';
 // * Demo
 import '../../demo/demo_page.dart';
 // * Demo
@@ -76,6 +76,13 @@ class AppRoutes {
       name: '/home',
       page: () => HomeShowCase(),
     ),
+
+    // * Splash
+    GetPage(
+      name: '/splash',
+      page: () => const Splash(),
+    ),
+    // * Splash
 
     // * ShowDemo
     GetPage(
