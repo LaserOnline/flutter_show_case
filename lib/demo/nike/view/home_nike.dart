@@ -7,6 +7,7 @@ import '../widget/draggable_scrollable.dart';
 import '../widget/list.product.dart';
 import '../widget/profile.dart';
 import '../widget/promo.dart';
+import '../widget/search.dart';
 
 class HomeNike extends StatelessWidget {
   HomeNike({super.key});
@@ -57,9 +58,10 @@ class HomeNike extends StatelessWidget {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          ListProduct(
-                            axis: true,
-                          ),
+                          // const Padding(
+                          //   padding: EdgeInsets.all(8.0),
+                          //   child: Search(),
+                          // ),
                           ListProduct(
                             axis: false,
                           ),
@@ -70,16 +72,16 @@ class HomeNike extends StatelessWidget {
                 ),
               ],
             ),
-            const FractionallySizedBox(
-              alignment: Alignment.bottomCenter,
-              heightFactor:
-                  0.8, // Adjust this factor to change the height of the sheet
-              child: DraggableScrollable(),
-            ),
+            // const FractionallySizedBox(
+            //   alignment: Alignment.bottomCenter,
+            //   heightFactor:
+            //       0.8, // Adjust this factor to change the height of the sheet
+            //   child: DraggableScrollable(),
+            // ),
           ],
         ),
       ),
-      backgroundColor: Colors.grey[400],
+      backgroundColor: Colors.white,
     );
   }
 }

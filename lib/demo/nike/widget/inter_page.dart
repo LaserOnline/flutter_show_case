@@ -160,7 +160,7 @@ class InterImageColum extends StatelessWidget {
                 height: height / 5,
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(8)),
-                  color: Colors.red,
+                  color: Colors.orangeAccent,
                 ),
                 child: ClipRRect(
                   borderRadius: const BorderRadius.only(
@@ -175,19 +175,19 @@ class InterImageColum extends StatelessWidget {
                 ),
               ),
               Container(
-                child: const Column(
+                child: Column(
                   children: [
                     Row(
                       children: [
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsets.only(
+                            padding: const EdgeInsets.only(
                               top: 10,
                               left: 10,
                             ),
                             child: Text(
-                              "Namwexxxxxxxxxxxx",
-                              style: TextStyle(
+                              "${productController.prodoucts[index].name}",
+                              style: const TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 18,
@@ -201,7 +201,7 @@ class InterImageColum extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        Expanded(
+                        const Expanded(
                           child: Padding(
                             padding: EdgeInsets.only(
                               right: 100,
@@ -215,13 +215,13 @@ class InterImageColum extends StatelessWidget {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsets.only(
+                            padding: const EdgeInsets.only(
                               top: 10,
                               left: 10,
                             ),
                             child: Text(
-                              "30000000",
-                              style: TextStyle(
+                              "${productController.prodoucts[index].price}",
+                              style: const TextStyle(
                                 color: Colors.black,
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,

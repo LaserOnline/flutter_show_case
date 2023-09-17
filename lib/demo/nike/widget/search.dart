@@ -8,14 +8,18 @@ class Search extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 25.0),
       child: TextField(
+        style: TextStyle(color: Colors.black),
         decoration: InputDecoration(
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.white),
-            borderRadius: BorderRadius.circular(20),
-          ),
+              borderSide: BorderSide(
+                color: Colors.black,
+              ),
+              borderRadius: BorderRadius.circular(15)),
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.white),
-            borderRadius: BorderRadius.circular(20),
+            borderSide: BorderSide(
+              color: Colors.black,
+            ),
+            borderRadius: BorderRadius.circular(15),
           ),
         ),
       ),
