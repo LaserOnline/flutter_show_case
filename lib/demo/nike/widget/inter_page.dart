@@ -158,9 +158,9 @@ class InterImageColum extends StatelessWidget {
             children: [
               Container(
                 height: height / 5,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(8)),
-                  color: Colors.orangeAccent,
+                  color: Colors.grey.shade100,
                 ),
                 child: ClipRRect(
                   borderRadius: const BorderRadius.only(
@@ -168,7 +168,7 @@ class InterImageColum extends StatelessWidget {
                     topRight: Radius.circular(16.0),
                   ),
                   child: Image.asset(
-                    Logo.NikeImages1,
+                    "${productController.prodoucts[index].image}",
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),

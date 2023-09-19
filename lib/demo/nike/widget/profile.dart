@@ -85,7 +85,7 @@ class Setting extends StatelessWidget {
                       child: InkWell(
                         onTap: () {
                           Get.offAllNamed('/home');
-                          productController.Clear();
+                          // productController.Clear();
                         },
                         child: Container(
                           padding: const EdgeInsets.all(16.0),

@@ -3,11 +3,9 @@ import 'package:flutter_show_case/demo/nike/module/controller/prodouct.controlle
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
 import '../widget/Loading.dart';
-import '../widget/draggable_scrollable.dart';
 import '../widget/list.product.dart';
 import '../widget/profile.dart';
 import '../widget/promo.dart';
-import '../widget/search.dart';
 
 class HomeNike extends StatelessWidget {
   HomeNike({super.key});
@@ -58,10 +56,6 @@ class HomeNike extends StatelessWidget {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          // const Padding(
-                          //   padding: EdgeInsets.all(8.0),
-                          //   child: Search(),
-                          // ),
                           ListProduct(
                             axis: false,
                           ),
@@ -72,12 +66,6 @@ class HomeNike extends StatelessWidget {
                 ),
               ],
             ),
-            // const FractionallySizedBox(
-            //   alignment: Alignment.bottomCenter,
-            //   heightFactor:
-            //       0.8, // Adjust this factor to change the height of the sheet
-            //   child: DraggableScrollable(),
-            // ),
           ],
         ),
       ),
